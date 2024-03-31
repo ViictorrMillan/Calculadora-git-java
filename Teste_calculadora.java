@@ -13,7 +13,7 @@ public class Teste_calculadora {
         valores [1] = Integer.parseInt(valor2String);
 
         // Entrada da operação
-        String [] operacoes = {"+", "-", "*"};
+        String [] operacoes = {"+", "-", "*", "/"};
         int escolha = JOptionPane.showOptionDialog(null, "Selecione a operação desejada: ", "Operação", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, operacoes, operacoes[0]);
        
         // Exibição do resultado
@@ -30,6 +30,8 @@ public class Teste_calculadora {
                 return valor1 - valor2;
              case 2:
                 return valor1 * valor2;   
+             case 3: 
+                return valor1 / valor2;   
              default:
                 throw new IllegalArgumentException("Operação inválida");
 
