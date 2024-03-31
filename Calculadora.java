@@ -21,7 +21,7 @@ public class Calculadora {
         JOptionPane.showMessageDialog(null, "O resultado da operação é:  " + resultado );
    
     }
-    // Lógica de após seleção da operação
+    // Lógica após escolha da operação
     public static int calcular(int valor1, int valor2, int escolha) {
         switch (escolha) {
              case 0:
